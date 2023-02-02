@@ -72,7 +72,8 @@ class Dallara_WMPC:
         return fy0
 
     def slip_ratio_estimator(self,u):
-        slip_ratio[i] = (self.reff * self.wheel_speed[i] - u) / (self.reff * self.x0[i])
+        for i in range(4):
+            slip_ratio[i] = (self.reff * self.wheel_speed[i] - u) / np.max(self.reff * self.wheel_speed[i],u)
         return slip_ratio
 
     def speed_estimation(self):
@@ -167,7 +168,7 @@ class Dallara_WMPC:
         u,v = speed_estimation(self)
         psi_desired = np.arctan(self.yd / self.xd)
         if u != 0.0:
-            delta1 = psi_desired + self.x0[1] / u
+            delta1 = psi_desired - self.x0[1] / u
         else:
             delta1 = psi_desired
 
@@ -212,8 +213,8 @@ class Dallara_WMPC:
         Tw4 = np.array([[tq4, 0], [0, tdelta4]])
 
         # Reconfiguration (Mapping) Matricies: Delta1 input
-        Lw1 = np.array([[np.cos(delta1), -np.sin(delta1)], [np.sin(delta1), np.cos(delta1)]])
-        Lw2 = np.array([[np.cos(delta1), -np.sin(delta1)], [np.sin(delta1), np.cos(delta1)]])
+        Lw1 = np.array([[np.cos(self.W0[1]), -np.sin(self.W0[1])], [np.sin(self.W0[1]), np.cos(self.W0[1])]])
+        Lw2 = np.array([[np.cos(self.W0[1]), -np.sin(self.W0[1])], [np.sin(self.W0[1]), np.cos(self.W0[1])]])
         Lw3 = np.array([[1, 0], [0, 1]])
         Lw4 = np.array([[1, 0], [0, 1]])
 
