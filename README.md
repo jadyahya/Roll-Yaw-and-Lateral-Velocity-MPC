@@ -20,10 +20,8 @@ The key highlights of the research and the associated paper are as follows:
 To utilize the Model Predictive Controller (MPC) implementation provided in this repository, please follow these steps:
 
 1. Clone the repository to your local machine using the following command:
-'''
-git clone git@github.com:jadyahya/Roll-Yaw-and-Lateral-Velocity-MPC.git
-'''
-
+`git clone git@github.com:jadyahya/Roll-Yaw-and-Lateral-Velocity-MPC.git
+`
 2. Modify and configure the controller parameters to suit your specific vehicle and racing conditions.
 
 3. Run the controller and evaluate its performance using the provided simulation environments and scenarios.
