@@ -28,7 +28,7 @@ To utilize the Model Predictive Controller (MPC) implementation provided in this
 
 ## Contribution and Feedback
 
-We believe that the implementation and findings presented in this repository can greatly benefit the racing community, particularly those participating in high-speed racing events such as the Indy Autonomous Challenge. We encourage researchers, developers, and enthusiasts to contribute to this project and provide feedback to further improve the performance and capabilities of the Model Predictive Controller (MPC).
+We believe that the implementation and findings presented in this repository can greatly benefit autonomous vehicle applicationa generally, and the racing community specifically, particularly those participating in high-speed racing events such as the Indy Autonomous Challenge. We encourage researchers, developers, and enthusiasts to contribute to this project and provide feedback to further improve the performance and capabilities of the Model Predictive Controller (MPC).
 
 ## Contact
 
