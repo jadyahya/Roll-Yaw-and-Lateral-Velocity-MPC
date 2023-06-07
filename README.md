@@ -26,6 +26,9 @@ To utilize the Model Predictive Controller (MPC) implementation provided in this
 
 3. Run the controller and evaluate its performance using the provided simulation environments and scenarios.
 
+
+#Note: The file Class_CasADi_Implemented.py is run through the LGSVL simulator (open source) and the remainder of the software stack (localization, pathplanning, etc.). The latter are proprietary and not available in this repository.
+
 ## Contribution and Feedback
 
 We believe that the implementation and findings presented in this repository can greatly benefit autonomous vehicle applicationa generally, and the racing community specifically, particularly those participating in high-speed racing events such as the Indy Autonomous Challenge. We encourage researchers, developers, and enthusiasts to contribute to this project and provide feedback to further improve the performance and capabilities of the Model Predictive Controller (MPC).
