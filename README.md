@@ -27,7 +27,7 @@ To utilize the Model Predictive Controller (MPC) implementation provided in this
 3. Run the controller and evaluate its performance using the provided simulation environments and scenarios.
 
 
-# Note: The file Class_CasADi_Implemented.py is run through the LGSVL simulator (open source) and the remainder of the software stack (localization, pathplanning, etc.). The latter are proprietary and not available in this repository.
+### Note: The file Class_CasADi_Implemented.py is run through the LGSVL simulator (open source) and the remainder of the software stack (localization, pathplanning, etc.). The latter are proprietary and not available in this repository.
 
 ## Contribution and Feedback
 
